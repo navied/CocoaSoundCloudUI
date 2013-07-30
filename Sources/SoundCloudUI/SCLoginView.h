@@ -29,6 +29,7 @@
 @property (nonatomic, assign) SCCredentialsView *credentialsView;
 - (void)removeAllCookies;
 - (void)login:(id)sender;
+- (void)enableInteraction;////MY ADDITION////
 @end
 
 @protocol SCLoginViewProtocol <NSObject>

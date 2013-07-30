@@ -336,6 +336,13 @@
 
    if ((self.credentialsView.username.length != 0) &&
        (self.credentialsView.password.length != 0)) {
+       
+       ////MY ADDITIONS////
+       [self.credentialsView setUserInteractionEnabled:NO];
+       [self.loginButton setUserInteractionEnabled:NO];
+       [self.fbButton setUserInteractionEnabled:NO];
+       ////////////////////
+       
         [[SCSoundCloud shared] requestAccessWithUsername:self.credentialsView.username
                                                 password:self.credentialsView.password];
     } else {
@@ -348,6 +355,15 @@
         [alert release];
     }
 }
+
+////MY ADDITIONS////
+- (void)enableInteraction
+{
+    [self.credentialsView setUserInteractionEnabled:YES];
+    [self.loginButton setUserInteractionEnabled:YES];
+    [self.fbButton setUserInteractionEnabled:YES];
+}
+////////////////////
 
 - (void)signInWithFacebook:(id)sender
 {

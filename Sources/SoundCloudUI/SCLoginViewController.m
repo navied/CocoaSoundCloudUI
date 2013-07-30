@@ -102,9 +102,24 @@
                                                  selector:@selector(updateScrollView)
                                                      name:UIKeyboardDidHideNotification
                                                    object:nil];
+        
+        ////MY ADDITIONS////
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(notifHandler:)
+                                                     name:@"SCEnableInteraction" object:nil];
+        ////////////////////
     }
     return self;
 }
+
+////MY ADDITIONS////
+- (void)notifHandler:(NSNotification *)notif
+{
+    if ([notif.name isEqualToString:@"SCEnableInteraction"]) {
+        [self.loginView enableInteraction];
+    }
+}
+////////////////////
 
 - (void)dealloc;
 {
