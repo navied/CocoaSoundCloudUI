@@ -108,7 +108,7 @@
     self.backgroundColor = [UIColor soundCloudBackgroundGrey];
 
     [self layoutTitleLabel];
-    [self layoutFbButton];
+    //[self layoutFbButton];////MY ADDITIONS////
     [self layoutCredentialsView];
     [self layoutLoginButton];
     [self layoutTermsAndPrivacy];
