@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'CocoaSoundCloudUI'
-  s.version = '1.0.7a'
+  s.version = '1.0.7b'
   s.summary = 'A simple way to share audio on soundcloud.com.'
   s.homepage = 'https://github.com/navied/CocoaSoundCloudUI'
   s.author = { 'Ullrich Schäfer' => 'ullrich@soundcloud.com',
